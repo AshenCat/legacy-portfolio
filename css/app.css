@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+}
+body, html {
+    height: 100%;
+}
+
+#pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+            perspective: 1000;
+}
+
+#slideContainer {
+    width: 200%; /* to contain 4 panels, each with 100% of window width */
+    height: 100%;
+}
+
+.full-div {
+	height: 100vh;
+    width: 50%; /* relative to parent -> 25% of 400% = 100% of window width */
+    float: left;
+}
+
+.pad-my-img {
+    background: #f3f9ff;
+    border-radius: 0 25px 0 25px;
+    box-shadow: 10px 10px 5px grey;
+    border: 1px solid lightgray;
+}
+
+.h-388{
+    height: 388px;
+}
+
+.img-semi-rounded {
+    border-radius: 0 25px 0 25px;
+    padding: 8px;
+}
+
+#bg-vid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.div-1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url("../assets/georgebrown.jpg");
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f3f9ff
+}   
+
+.div-2{
+    color: #f3f9ff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url("../assets/project.jpg");
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f3f9ff
+}
+
+
+footer {
+    background: #f3f9ff;
+}
+
+.z-5 {
+    -webkit-perspective: 1000;
+            perspective: 1000;
+}
+
+.bio {
+    background-color: #f3f9ff
+}
+
+.d-flex {
+    align-items: center;
+    justify-content: center;
+}
