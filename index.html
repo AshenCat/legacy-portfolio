@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,16 +16,17 @@
     <script type="text/javascript" src="js/debug.addIndicators.min.js"></script>
     <title>Kreefford Portfolio</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <a class="navbar-brand d-flex" href="#">
             <img src="assets/Logo.png" class="mr-3" width="30px" height="30px">
-            <span class="pl-3" style="border-left: 1px solid #333">Klifford ü</span>
+            <span class="pl-3" style="border-left: 1px solid #333">Klifford Agujar ü</span>
         </a>
     </nav>
     <main>
         <div class="p-5 pl-4 pr-4 z-5 bio container-fluid">
-            <h2 class="lead display-4 text-center text-uppercase">Bio </h2>
+            <h2 class="display-5 text-center text-uppercase">Bio </h2>
             <div class="row">
                 <div class="mr-3 col-md-2 col-lg-4" style="min-width: 250px;">
                     &nbsp;<img src="assets/Me.JPG" alt="Kreefford" class="pad-my-img img-semi-rounded fl-r-when-lg">
@@ -33,18 +35,24 @@
                     <p class="lead">
                         <br>
                         <br>
-                         I am a passionate web developer with a curious mindset. The internet had always piqued my interest which made him pursue a web developer career path. I had created several small-scale projects like a chat application and a mock of Instagram using MERN stack and Laravel/Vue stack respectively, and still grinding. Thus, taking every opportunity to expand skill set and necessary experience needed in the future.
+                        I am a passionate web developer with a curious mindset. The internet had always piqued my
+                        interest which made him pursue a web developer career path. I had created several small-scale
+                        projects like a chat application and a mock of Instagram using MERN stack and Laravel/Vue stack
+                        respectively, and still grinding. Thus, taking every opportunity to expand skill set and
+                        necessary experience needed in the future.
                     </p>
                 </div>
             </div>
         </div>
         <div class="text-center h-388 z-5">
             <div>
-                <p class="lead display-4 p-5">Public</p>
+                <h2 class="display-5 p-5">Public</h2>
                 <div style="padding-top: 15px;">
-                    <a target="_blank" href="https:/github.com/ashencat" class="mr-3"><i class="fab fa-github fa-4x"></i></a>
-                    <a href="#dummy-div" class="mr-3 ml-3"><i class="fas fa-envelope fa-4x"></i></a>
-                    <a href="#dummy-div" class="mr-3 ml-3"><i class="fab fa-linkedin fa-4x" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https:/github.com/ashencat" class="mr-3"><i
+                            class="fab fa-github fa-4x"></i></a>
+                    <a href="#dummy-div" class="mr-3 ml-3 smooth"><i class="fas fa-envelope fa-4x"></i></a>
+                    <a href="#dummy-div" class="mr-3 ml-3 smooth"><i class="fab fa-linkedin fa-4x"
+                            aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
@@ -53,88 +61,144 @@
         <div id="slideContainer">
             <div class="full-div div-1">
                 <div class="container-fluid">
-                    <h2 class="display-4 text-uppercase text-center pb-3 pt-5">Education</h2>
-                    <h3 class="lead p-5">George Brown College - TO BE FIXED</h3>
+                    <h2 class="display-5 text-uppercase text-center pb-3 pt-5">Education - Still on the works</h2>
+                    <div>
+                        <img src="/assets/George_Brown_College_logo.svg.png" alt="GBC Logo">
+                        <h3 class="lead p-5" style="display: inline">George Brown College - Still on the works</h3>
+                    </div>
+
                     <p class="font-weight-light display-5">Computer Programming Analyst - Advanced Diploma</p>
                     <ul>
-                        <li class="font-weight-light display-5">Currently Taking Computer Programmer Analyst Program working towards completing an Ontario College Advanced Diploma</li>
-                        <li class="font-weight-light display-5">Have worked several team-based projects like an inventory management system, and an airline booking system</li>
-                        <li class="font-weight-light display-5">Made it to the Dean’s Honor List for the Fall 2019 term</li>
-                        <li class="font-weight-light display-5">A Component of the program is creating an application to solve a modern business needs like migrating from a paper-based documentation to a digital documentation system</li>
+                        <li class="font-weight-light display-5">Graduate of Computer Programmer Analyst Program
+                            and completed an Ontario College Advanced Diploma</li>
+                        <li class="font-weight-light display-5">Have worked several team-based projects like an
+                            inventory management system, and an airline booking system</li>
+                        <li class="font-weight-light display-5">Made it to the Dean’s Honor List for the Fall 2019 term
+                        </li>
+                        <li class="font-weight-light display-5">A Component of the program is creating an application to
+                            solve a modern business needs like migrating from a paper-based documentation to a digital
+                            documentation system</li>
                     </ul>
                 </div>
             </div>
             <div class="full-div div-2">
-                <div class="container-fluid">
-                    <h2 class="display-4 text-uppercase text-center pb-3 pt-5">Projects</h2>
-                    <p>To be added</p>
+                <div class="container-fluid smallerplx">
+                    <h2 class="display-5 text-uppercase text-center pb-3 pt-5">Projects - unfinished</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="capstone" data-toggle="list"
+                                    href="#idcapstone" role="tab" aria-controls="capstone">
+                                    Inventory Management System
+                                </a>
+                                <a class="list-group-item list-group-item-action" id="list-profile-list"
+                                    data-toggle="list" href="#list-profile" role="tab"
+                                    aria-controls="profile">
+                                    Chat app
+                                </a>
+                                <a class="list-group-item list-group-item-action" id="list-messages-list"
+                                    data-toggle="list" href="#list-messages" role="tab"
+                                    aria-controls="messages">
+                                    Mock Instagram
+                                </a>
+                                <a class="list-group-item list-group-item-action" id="list-settings-list"
+                                    data-toggle="list" href="#list-settings" role="tab"
+                                    aria-controls="settings">
+                                    List of upcoming projects
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="tab-content tab1" id="nav-tabContent">
+                                <div class="tab-pane fade show active tab2" id="idcapstone" role="tabpanel"
+                                    aria-labelledby="capstone">
+                                    <p class="lead">Stack: <b>MERN</b></p>
+                                    <p class="lead">Github link: <a href="https://github.com/AshenCat/capstone-abc-store">Capstone</a></p>
+                                    <p class="lead">This project is a collaborative work of 3 students as a team. Starting from scratch, we have designed this project by brainstorming ideas of how and IMS system would be. Tasks were assigned to each member to have a goal for every sprint.</p>
+                                    <small style="display:block">Contributors: </small>
+                                    <small style="display:block"><a href="https://github.com/itbel">Igor T Belem</a></small>
+                                    <small style="display:block"><a href="https://github.com/ashencat">Klifford Agujar ü</a></small>
+                                    <small style="display:block"><a href="https://github.com/kevin-hy">Kevin Hy</a></small>
+                                    <br>
+                                </div>
+                                <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                                    aria-labelledby="list-profile-list">chat app here</div>
+                                <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                    aria-labelledby="list-messages-list">Mock Instagram here</div>
+                                <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                    aria-labelledby="list-settings-list">List of upcoming projects</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="stack pb-5">
         <div class="container-fluid">
-            <h2 class="display-4 text-uppercase text-center pb-3 pt-5">Tech</h2>
+            <h2 class="display-5 text-uppercase text-center pb-3 pt-5">Tech</h2>
             <div class="d-flex flex-wrap justify-content-around mod1">
                 <div class="flex-item">
                     <div class="card p-4 m-3">
                         <i class="fab fa-react fa-7x"></i>
-                        <p class="text-center display-5"style="padding-top: 25px;">React</p>
+                        <p class="text-center display-5" style="padding-top: 25px;">React</p>
                     </div>
                 </div>
                 <div class="flex-item">
                     <div class="card p-4 m-3">
                         <i class="fab fa-vuejs fa-7x"></i>
-                        <p class="text-center display-5"style="padding-top: 25px;">Vuejs</p>
+                        <p class="text-center display-5" style="padding-top: 25px;">Vuejs</p>
                     </div>
                 </div>
                 <div class="flex-item">
                     <div class="card p-4 m-3">
                         <i class="fab fa-node-js fa-7x"></i>
-                        <p class="text-center display-5"style="padding-top: 25px;">Nodejs</p>
+                        <p class="text-center display-5" style="padding-top: 25px;">Nodejs</p>
                     </div>
                 </div>
                 <div class="flex-item">
                     <div class="card p-4 m-3">
                         <i class="fab fa-html5 fa-7x"></i>
-                        <p class="text-center display-5"style="padding-top: 25px;">HTML5</p>
+                        <p class="text-center display-5" style="padding-top: 25px;">HTML5</p>
                     </div>
                 </div>
                 <div class="flex-item">
                     <div class="card p-4 m-3">
                         <i class="fab fa-css3 fa-7x"></i>
-                        <p class="text-center display-5"style="padding-top: 25px;">CSS3</p>
+                        <p class="text-center display-5" style="padding-top: 25px;">CSS3</p>
                     </div>
                 </div>
                 <div class="flex-item">
                     <div class="card p-4 m-3">
                         <i class="fab fa-js-square fa-7x"></i>
-                        <p class="text-center display-5"style="padding-top: 25px;">Javascript</p>
+                        <p class="text-center display-5" style="padding-top: 25px;">Javascript</p>
                     </div>
                 </div>
                 <div class="flex-item">
                     <div class="card p-4 m-3">
                         <i class="fab fa-php fa-7x"></i>
-                        <p class="text-center display-5"style="padding-top: 25px;">PHP</p>
+                        <p class="text-center display-5" style="padding-top: 25px;">PHP</p>
                     </div>
                 </div>
                 <div class="flex-item">
                     <div class="card p-4 m-3">
                         <i class="fab fa-laravel fa-7x"></i>
-                        <p class="text-center display-5"style="padding-top: 25px;">Laravel</p>
+                        <p class="text-center display-5" style="padding-top: 25px;">Laravel</p>
                     </div>
                 </div>
                 <div class="flex-item">
                     <div class="card p-4 m-3">
                         <i class="fab fa-bootstrap fa-7x"></i>
-                        <p class="text-center display-5"style="padding-top: 25px;">Bootstrap</p>
+                        <p class="text-center display-5" style="padding-top: 25px;">Bootstrap</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <footer class="z-5 pt-5">
-        <div class="text-center text-uppercase"><p class="display-4 ">Contact me @</p></div>
+        <div class="text-center text-uppercase">
+            <p class="display-5 ">Contact me @</p>
+        </div>
         <div class="text-center"><i class="fab fa-envelope-o" aria-hidden="true"></i> forddagujar95@gmail.com</div>
         <div class="text-center">
             <a href="https://facebook.com/gabranthbcr">
@@ -149,59 +213,61 @@
             </a>
         </div>
         <div class="text-center mt-3">
-            <p class="lead font-weight-light display-6 pb-3" style="margin-bottom: 0px !important">I'll respond to you as soon as I can</p>
+            <p class="lead font-weight-light display-6 pb-3" style="margin-bottom: 0px !important">I'll respond to you
+                as soon as I can</p>
         </div>
         <div id="dummy-div"></div>
     </footer>
-    </script>
+    <script src="/js/bootstrap.js"></script>
     <script>
         $(function () { // wait for document ready
-			// init
-			var controller = new ScrollMagic.Controller();
-			// define movement of panels
-			var wipeAnimation = new TimelineMax()
-				// animate to second panel
-				.to("#slideContainer", 0.5, {z: -150})		// move back in 3D space
-				.to("#slideContainer", 1,   {x: "-50%"})	// move in to first panel
-				.to("#slideContainer", 0.5, {z: 0})				// move back to origin in 3D space
-				// animate to third panel
-			// create scene to pin and link animation
-			new ScrollMagic.Scene({
-					triggerElement: "#pinContainer",
-					triggerHook: "onLeave",
-					duration: "250%"
-				})
-				.setPin("#pinContainer")
-				.setTween(wipeAnimation)
-				//.addIndicators() // add indicators (requires plugin)
+            // init
+            var controller = new ScrollMagic.Controller();
+            // define movement of panels
+            var wipeAnimation = new TimelineMax()
+                // animate to second panel
+                .to("#slideContainer", 0.5, { z: -150 })		// move back in 3D space
+                .to("#slideContainer", 1, { x: "-50%" })	// move in to first panel
+                .to("#slideContainer", 0.5, { z: 0 })				// move back to origin in 3D space
+            // animate to third panel
+            // create scene to pin and link animation
+            new ScrollMagic.Scene({
+                triggerElement: "#pinContainer",
+                triggerHook: "onLeave",
+                duration: "250%"
+            })
+                .setPin("#pinContainer")
+                .setTween(wipeAnimation)
+                //.addIndicators() // add indicators (requires plugin)
                 .addTo(controller);
-            });
+        });
     </script>
     <script>
-            $(document).ready(function(){
-              // Add smooth scrolling to all links
-              $("a").on('click', function(event) {
-            
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $(".smooth").on('click', function (event) {
+
                 // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
-                  // Prevent default anchor click behavior
-                  event.preventDefault();
-            
-                  // Store hash
-                  var hash = this.hash;
-            
-                  // Using jQuery's animate() method to add smooth page scroll
-                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                  $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                  }, 800, function(){
-            
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                  });
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
                 } // End if
-              });
             });
-            </script>
+        });
+    </script>
 </body>
+
 </html>
