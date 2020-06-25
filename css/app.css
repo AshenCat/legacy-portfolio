@@ -128,8 +128,33 @@ footer {
     p {
         font-size: 15px !important;
     }
+    .img-port{
+        width: 50vw !important;
+    }
+    .img-gbc{
+        margin: 0 auto !important;
+        clear: both;
+    }
+    .fr{
+        align-self: center;
+    }
+    .fl{
+        align-self: center;
+    }
   }
 
   ul {
       list-style: none;
   }
+
+.img-port {
+    width: 30vw;
+    margin: 10px auto;
+}
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
