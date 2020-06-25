@@ -125,4 +125,11 @@ footer {
         width: 95%;
         font-size: 11px;
     }
+    p {
+        font-size: 15px !important;
+    }
+  }
+
+  ul {
+      list-style: none;
   }
