@@ -136,10 +136,10 @@ footer {
         clear: both;
     }
     .fr{
-        align-self: center;
+        align-self: center !important;
     }
     .fl{
-        align-self: center;
+        align-self: center !important;
     }
   }
 
