@@ -136,6 +136,7 @@ footer {
         clear: both;
     }
     .fr{
+        float:none !important;
         align-self: center !important;
     }
     .fl{
