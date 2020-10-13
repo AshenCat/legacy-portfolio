@@ -151,11 +151,25 @@ footer {
 .img-port {
     width: 30vw;
     margin: 10px auto;
+    border: 1px solid slategray;
+    /* border-radius: 20px; */
 }
+
+.tabber {
+    padding: 0 1rem;
+    border: 1px solid slategray;
+    border-radius: 20px;
+    background-color: #acc3daee;
+}
+
 .fr {
     float: right;
 }
 
 .fl {
     float: left;
+}
+
+.hover:hover {
+    background-color: lightgray;
 }
