@@ -122,6 +122,10 @@ footer {
         margin-top: 4rem;
         margin-bottom: 2rem;
     }
+    .titlewensmol {
+        padding-top:4rem;
+        /* padding-bottom: 2rem; */
+    }
 }
 
 @media only screen and (max-width: 540px) {
@@ -153,6 +157,9 @@ footer {
     }
     .smolgone{
         display: none !important;
+    }
+    .txtsmol{
+        font-size: 1.8vh !important;
     }
   }
 
