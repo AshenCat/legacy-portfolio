@@ -117,16 +117,22 @@ footer {
     width: 80%; 
     margin: 0 auto; 
 }
+@media only screen and (min-width: 550px) { 
+    .inttitle {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+}
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 540px) {
     .mod1 {
         align-content: space-around; 
         margin: 0 auto; 
         width: 95%;
-        font-size: 11px;
+        font-size: 1vh;
     }
     p {
-        font-size: 15px !important;
+        font-size: 1.5vh !important;
     }
     .img-port{
         width: 50vw !important;
@@ -141,6 +147,12 @@ footer {
     }
     .fl{
         align-self: center !important;
+    }
+    .tabber {
+        margin-top: 1rem;
+    }
+    .smolgone{
+        display: none !important;
     }
   }
 
