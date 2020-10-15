@@ -135,8 +135,11 @@ footer {
         width: 95%;
         font-size: 1vh;
     }
-    p {
+    p, small > a {
         font-size: 1.5vh !important;
+    }
+    .lead {
+        margin-bottom: 8px;
     }
     .img-port{
         width: 50vw !important;
@@ -160,6 +163,9 @@ footer {
     }
     .txtsmol{
         font-size: 1.8vh !important;
+    }
+    .list-group-item {
+        padding: 4px 4px !important;
     }
   }
 
@@ -191,4 +197,27 @@ footer {
 
 .hover:hover {
     background-color: lightgray;
+}
+
+.roundround {
+    border: 1px solid lightskyblue;
+    background-color: gray;
+}
+
+
+.itemc {
+    width: 50px;
+    margin: 20px auto;
+    max-height: 30px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    margin: auto;
+    z-index: 9999;
+}
+
+.item-primary {
+    margin-top: 80px;
+    right: 20px;
+    position: fixed;
 }

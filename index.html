@@ -8,25 +8,29 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
 
     <script type="text/javascript" src="js/TweenMax.min.js"></script>
     <script type="text/javascript" src="js/ScrollMagic.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/animation.gsap.min.js"></script>
     <script type="text/javascript" src="js/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
     <title>Kreefford Portfolio</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <a class="navbar-brand d-flex" href="#">
-            <img src="assets/Logo.png" class="mr-3" width="30px" height="30px">
+            <div class="rounded-circle roundround mr-2">
+                <img src="assets/Logo.png" class="mx-auto p-1" width="30px" height="30px">
+            </div>
             <span class="pl-3" style="border-left: 1px solid #333">Klifford Agujar ü</span>
         </a>
     </nav>
     <main>
         <div class="pb-5 bio container-fluid">
-            <h2 class="display-5 text-center text-uppercase titlewensmol">Bio </h2>
+            <h2 class="display-5 text-center text-uppercase titlewensmol" data-aos="fade-up" id="top">Bio </h2>
             <div class="row">
                 <div class="col-md-2 col-lg-4" style="min-width: 250px;">
                     &nbsp;
@@ -35,7 +39,7 @@
                     </div>
                 </div>
                 <div class="ml-3 p-3 col" style="max-width: 700px">
-                    <p class="lead">
+                    <p class="lead" data-aos="fade-up">
                         <br>
                         <br>
                         I am a passionate web developer with a curious mindset. The internet had always piqued my
@@ -54,19 +58,28 @@
                     <a target="_blank" href="https://github.com/ashencat" class="mr-3"><i
                             class="fab fa-github fa-4x"></i></a>
                     <a href="#dummy-div" class="mr-3 ml-3 smooth"><i class="fas fa-envelope fa-4x"></i></a>
-                    <a href="#dummy-div" class="mr-3 ml-3 smooth"><i class="fab fa-linkedin fa-4x"
-                            aria-hidden="true"></i></a>
+                    <a href="#dummy-div" class="mr-3 ml-3 smooth"><i class="fab fa-linkedin fa-4x" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
     </main>
+    <div class="itemc item-primary"
+        data-aos="fade-left"
+        data-aos-anchor="#trigger"
+        data-aos-anchor-placement="top-top">
+        <a class="btn btn-outline-dark smooth" href="#top">
+            <i class="fas fa-arrow-up"></i>
+            <br>
+            Back to top
+        </a>
+    </div>
     <div id="pinContainer">
         <div id="slideContainer">
             <div class="full-div div-1">
-                <div class="container-fluid" class="pt-5">
+                <div class="container-fluid" class="pt-5" data-aos="fade-up">
                     <h2 class="display-5 text-uppercase text-center inttitle">Education</h2>
                     <div class="container-fluid d-flex justify-content-center text-center">
-                        <div class="d-flex justify-content-center tabber text-center">
+                        <div class="d-flex justify-content-center tabber text-center" >
                             <div class="p-2"><img class="img-gbc"  src="/assets/George_Brown_College_logo.svg.png" alt="GBC Logo"></div>
                             <div class="p-2"><h3 class="text-center mt-5 smolgone" style="display: block;"><b>George Brown College</b></h3></div>
                         </div>
@@ -88,49 +101,69 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="list-group" id="list-tab" role="tablist">
-                                <a class="list-group-item list-group-item-action active" id="capstone" data-toggle="list"
-                                    href="#idcapstone" role="tab" aria-controls="capstone">
+                                <a class="list-group-item list-group-item-action active" id="restotab"
+                                    data-toggle="list" href="#restoc" role="tab"
+                                    aria-controls="resto">
+                                    Restaurant App
+                                </a>
+                                <a class="list-group-item list-group-item-action" id="capstonetab" 
+                                    data-toggle="list" href="#capstonec" role="tab"
+                                    aria-controls="capstone">
                                     Inventory Management System
                                 </a>
-                                <a class="list-group-item list-group-item-action" id="list-profile-list"
-                                    data-toggle="list" href="#list-profile" role="tab"
-                                    aria-controls="profile">
+                                <a class="list-group-item list-group-item-action" id="chatapptab"
+                                    data-toggle="list" href="#chatappc" role="tab"
+                                    aria-controls="chatapptab">
                                     Chat Application
                                 </a>
-                                <a class="list-group-item list-group-item-action" id="list-messages-list"
-                                    data-toggle="list" href="#list-messages" role="tab"
-                                    aria-controls="messages">
+                                <a class="list-group-item list-group-item-action" id="mockinstatab"
+                                    data-toggle="list" href="#mockinstac" role="tab"
+                                    aria-controls="mockinsta">
                                     Mock Instagram
                                 </a>
-                                <a class="list-group-item list-group-item-action" id="list-settings-list"
-                                    data-toggle="list" href="#list-settings" role="tab"
-                                    aria-controls="settings">
+                                <a class="list-group-item list-group-item-action" id="otherstab"
+                                    data-toggle="list" href="#othersc" role="tab"
+                                    aria-controls="otherstab">
                                     List of upcoming projects
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-8">
                             <div class="tab-content tab1" id="nav-tabContent">
-                                <div class="tab-pane fade show active tab2 tabber" id="idcapstone" role="tabpanel" aria-labelledby="capstone">
+                                <div class="tab-pane fade tabber  show active" id="restoc" role="tabpanel" aria-labelledby="restotab">
+                                    <div class="container-fluid" style=" display: flex; justify-content: center;">
+                                        <img class="img-port" src="/assets/resto.png" alt="react project" >
+                                    </div>
+                                    <p class="lead">Stack: <b>MERN</b></p>
+                                    <p class="lead">Github link: <a href="https://github.com/AshenCat/rm_client">Restaurant App</a></p>
+                                    <p class="lead">Demo link: <a href="https://resto-menu-prototype.herokuapp.com/">Demo</a></p>
+                                    <p class="lead">The goal of the project is to help restaurant owners reduce employee-customer contact within business grounds by upgrading from old physical menu, to an online menu where customers just have to scan a QR code to access the menu.</p>
+                                    <small style="display:block">Contributors: </small>
+                                    <small style="display:block"><a href="https://github.com/ashencat">Klifford Agujar ü</a></small>
+                                    <small style="display:block"><a href="https://github.com/lilianyangc">Lilian Yang</a></small>
+                                    <small style="display:block"><a href="https://github.com/victafrancis">Francis Victa</a></small>
+                                    <small style="display:block"><a href="https://github.com/NaguitSirAngel">Sir Angel Naguit</a></small>
+                                </div>
+                                <div class="tab-pane fade tabber" id="capstonec" role="tabpanel" aria-labelledby="capstonetab">
                                     <div class="container-fluid" style=" display: flex; justify-content: center;">
                                         <img class="img-port" src="/assets/ReactIMS.JPG" alt="react project">
                                     </div>
                                     <p class="lead">Stack: <b>MERN</b></p>
-                                    <p class="lead">Status: <b>submitted</b></p>
                                     <p class="lead">Github link: <a href="https://github.com/AshenCat/capstone-abc-store">Capstone</a></p>
-                                    <p class="lead">This project is a collaborative work of 3 students as a team. Starting from scratch, we have designed this project by brainstorming ideas of how and IMS system would be. Tasks were assigned to each member to have a goal for every sprint.</p>
+                                    <p class="lead">This project is a collaborative work of 3 students as a team. 
+                                        Starting from scratch, we have designed this project by brainstorming ideas of how and IMS system would be. 
+                                        Tasks were assigned to each member to have a goal for every sprint.</p>
                                     <small style="display:block">Contributors: </small>
                                     <small style="display:block"><a href="https://github.com/itbel">Igor T Belem</a></small>
                                     <small style="display:block"><a href="https://github.com/ashencat">Klifford Agujar ü</a></small>
                                     <small style="display:block"><a href="https://github.com/kevin-hy">Kevin Hy</a></small>
                                     <br>
                                 </div>
-                                <div class="tab-pane fade tabber" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                                <div class="tab-pane fade tabber" id="chatappc" role="tabpanel" aria-labelledby="chatapptab">
                                     <div class="container-fluid" style=" display: flex; justify-content: center;">
                                         <img class="img-port" src="/assets/ChatApp.JPG" alt="react project" >
                                     </div>
                                     <p class="lead">Stack: <b>MERN</b></p>
-                                    <p class="lead">Status: <b>submitted</b></p>
                                     <p class="lead">Github link: <a href="https://github.com/AshenCat/assignment1">Chat App</a></p>
                                     <p class="lead">This project is a collaborative work of the same group as the capstone project above. The goal of this project is to create an app that sends messages between users in real time.</p>
                                     <small style="display:block">Contributors: </small>
@@ -138,17 +171,16 @@
                                     <small style="display:block"><a href="https://github.com/ashencat">Klifford Agujar ü</a></small>
                                     <small style="display:block"><a href="https://github.com/kevin-hy">Kevin Hy</a></small>
                                 </div>
-                                <div class="tab-pane fade tabber" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                                <div class="tab-pane fade tabber" id="mockinstac" role="tabpanel" aria-labelledby="mockinstatab">
                                     <div class="container-fluid" style=" display: flex; justify-content: center;">
                                         <img class="img-port" src="/assets/Laravel.JPG" alt="react project" >
                                     </div>
                                     <p class="lead">Stack: <b>LAMP + Laravel</b></p>
-                                    <p class="lead">Status: <b>Hiatus</b></p>
                                     <p class="lead">Github link: <a href="https://github.com/AshenCat/Laragram-early-2020">Laragram</a></p>
                                     <p class="lead">This project is a personal project theat uses LAMP stack with Laravel. The goal of this project is to mimic instagram profiles.</p>
                                     
                                 </div>
-                                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                                <div class="tab-pane fade" id="othersc" role="tabpanel" aria-labelledby="otherstab">
                                     <ul style="list-style: none;">
                                         <li>Video Streaming app. Currently in low priority status.</li>
                                         <li>Other upcoming projects would be placed here.</li>
@@ -162,9 +194,9 @@
         </div>
     </div>
     <div class="stack pb-5">
-        <div class="container-fluid">
+        <div class="container-fluid" id="triger">
             <h2 class="display-5 text-uppercase text-center pb-3 pt-5">Tech</h2>
-            <div class="d-flex flex-wrap justify-content-around mod1">
+            <div class="d-flex flex-wrap justify-content-around mod1" data-aos="fade-up">
                 <div class="flex-item">
                     <div class="card p-4 m-3 hover">
                         <i class="fab fa-react fa-7x"></i>
@@ -276,6 +308,10 @@
         });
     </script>
     <script>
+        AOS.init({
+                duration: 1200,
+                easing: 'ease-in-out-back'
+            })
         $(document).ready(function () {
             // Add smooth scrolling to all links
             $(".smooth").on('click', function (event) {
@@ -297,7 +333,7 @@
                         // Add hash (#) to URL when done scrolling (default click behavior)
                         window.location.hash = hash;
                     });
-                } // End if
+                }
             });
         });
     </script>
